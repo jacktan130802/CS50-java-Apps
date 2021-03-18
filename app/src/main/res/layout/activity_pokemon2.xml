@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PokemonActivity2">
+    <!--orientation is to determine whether vertical or horizontal.-->
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pokemon_name"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:paddingTop="10dp"
+        />
+    <!--initially only center the wrap content. Means center the whole wrap content space (almost insignificant.)-->
+   <!--wrap content center ? -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:id="@+id/pokemon_number"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:paddingTop="5dp"
+        />
+    <!--like that also can, making use of layout gravity.-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pokemon_type1"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:paddingTop="5dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pokemon_type2"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:paddingTop="5dp"
+        />
+   <!-- padding usually dp
+    text size usually sp-->
+</LinearLayout>
