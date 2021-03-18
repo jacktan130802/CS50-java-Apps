@@ -23,7 +23,7 @@ class NotesAdapter5 extends RecyclerView.Adapter<NotesAdapter5.NoteViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull NoteViewHolder holder, int position) {
-
+/*sdsd*/
     }
 
     @Override
