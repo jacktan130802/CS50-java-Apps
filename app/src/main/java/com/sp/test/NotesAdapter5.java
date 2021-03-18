@@ -11,24 +11,32 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
+import java.util.List;
+
 class NotesAdapter5 extends RecyclerView.Adapter<NotesAdapter5.NoteViewHolder> {
+  private List<Note5> note = new ArrayList<>(); //Creating an empty list.
 
     @NonNull
     @Override
     public NoteViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.note_row,parent,false);
 
-        return NoteViewHolder(view);//sfa
+        return new NoteViewHolder(view); //Method call expected --> New (CAUSE IT IS AN CONSTRUCTOR. )
     }
 
     @Override
     public void onBindViewHolder(@NonNull NoteViewHolder holder, int position) {
-/*sdsd*/
+        Note5 current = note.get(position);
+        holder.textView.setText(current.content);
+
+
+
     }
 
     @Override
-    public int getItemCount() {
-        return 0;
+    public int getItemCount(){
+        return note.size();
     }
 
     public static class NoteViewHolder extends RecyclerView.ViewHolder {
