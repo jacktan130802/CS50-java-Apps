@@ -33,6 +33,11 @@ class NotesAdapter5 extends RecyclerView.Adapter<NotesAdapter5.NoteViewHolder> {
 
 
     }
+    public void reload(){
+        note = Notes5.database.noteDAO5().getall(); //return all the notes.
+        //Can call /reference it like this when u calll it static.
+        notifyDataSetChanged();
+    }
 
     @Override
     public int getItemCount(){
